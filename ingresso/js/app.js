@@ -1,6 +1,15 @@
 function comprar() {
     let tipo = document.getElementById('tipo-ingresso');
-    let qtd = parseInt(document.getElementById('qtd').value);
+    let qtdInput = document.getElementById('qtd');
+    let qtd = parseInt(qtdInput.value);
+
+
+    // Verificar se a quantidade é um número positivo
+    if (isNaN(qtd) || qtd <= 0) {
+        alert('Por favor, insira uma quantidade válida.');
+        return;
+    }
+
 
     if (tipo.value == 'pista') {
         comprarPista(qtd);
@@ -11,16 +20,18 @@ function comprar() {
     }
 }
 
+
 function comprarPista(qtd) {
-    let qtdpista = parseInt(document.getElementById('qtd-pista').textContent);
-    if (qtd > qtdpista) {
+    let qtdPista = parseInt(document.getElementById('qtd-pista').textContent);
+    if (qtd > qtdPista) {
         alert('Quantidade indisponível para tipo pista');
     } else {
-        qtdpista = qtdpista - qtd;
-        document.getElementById('qtd-pista').textContent = qtdpista;
-        alert('Compra realizada com sucesso');
+        qtdPista = qtdPista - qtd;
+        document.getElementById('qtd-pista').textContent = qtdPista;
+        alert('Compra realizada com sucesso!');
     }
 }
+
 
 function comprarSuperior(qtd) {
     let qtdSuperior = parseInt(document.getElementById('qtd-superior').textContent);
@@ -29,10 +40,10 @@ function comprarSuperior(qtd) {
     } else {
         qtdSuperior = qtdSuperior - qtd;
         document.getElementById('qtd-superior').textContent = qtdSuperior;
-        alert('Compra realizada com sucesso');
+        alert('Compra realizada com sucesso!');
     }
-
 }
+
 
 function comprarInferior(qtd) {
     let qtdInferior = parseInt(document.getElementById('qtd-inferior').textContent);
@@ -41,6 +52,6 @@ function comprarInferior(qtd) {
     } else {
         qtdInferior = qtdInferior - qtd;
         document.getElementById('qtd-inferior').textContent = qtdInferior;
-        alert('Compra realizada com sucesso');
+        alert('Compra realizada com sucesso!');
     }
 }
