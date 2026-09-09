@@ -68,3 +68,15 @@ body {
     color: #000000;
     text-decoration: none;
 }
+.apresentacao__imagem {
+      width: 50%;
+}
+
+.apresentacao__conteudo {
+      width: 50%;
+      /* Outras propriedades... */
+}
+.apresentacao__links__navegacao {
+      width: 50%;
+      /* Outras propriedades... */
+} 
