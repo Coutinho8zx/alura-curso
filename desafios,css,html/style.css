@@ -74,9 +74,35 @@ body {
 
 .apresentacao__conteudo {
       width: 50%;
-      /* Outras propriedades... */
+     
 }
 .apresentacao__links__navegacao {
       width: 50%;
-      /* Outras propriedades... */
+      
 } 
+.apresentacao {
+        gap: 82px;
+}
+
+ @media (max-width: 1023px) {
+        .apresentacao {
+            flex-direction: column;
+     
+        }
+    }
+    @media (max-width: 1200px) {
+        .apresentacao {
+            flex-direction: column-reverse;
+        }
+    }
+
+        @media (max-width: 1200px) {
+        .cabecalho {
+            padding: 10%; /* Ajuste conforme necessário */
+        }
+    }
+    @media (max-width: 1200px) {
+        .cabecalho__menu {
+            justify-content: center;
+        }
+    }
