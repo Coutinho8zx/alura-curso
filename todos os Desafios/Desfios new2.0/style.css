@@ -44,3 +44,14 @@
     background-color: var(--botao-azul-efeito);
     color: var(--cor-de-fundo);
 }
+
+.footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #333;
+  }
+.botao-azul-efeito {
+    color: #9b6bf5;
+}
