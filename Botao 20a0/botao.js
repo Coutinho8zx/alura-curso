@@ -1,6 +1,6 @@
 let numero = 20;
 
-  document.getElementById("meu botao").addEventListener("click" , function(){
+  document.getElementById("meubotao").addEventListener("click" , function(){
     //Para Diminui//
     numero--;
 

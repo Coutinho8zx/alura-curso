@@ -1,12 +1,14 @@
 
 body {
     text-align: center;
+    background-color: #3C2A21 ;
 }
 
 #contador {
     font-size: 200px;
+    color: #D5CEA3;
 }
 
 #meubotao {
-    color: #f5f3f3be;
+    background-color: #E5E5CB;
 }
