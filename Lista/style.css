@@ -1,8 +1,15 @@
 #lista{
     display:block;
     font-size: 20px;
+    color:#9DB2BF;
 }
 
 body{
     text-align: center;
+    background-color:#27374D ;
+}
+
+#botao{
+    background-color:#9DB2BF;
+    justify-content: center;
 }
