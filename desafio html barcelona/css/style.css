@@ -1,12 +1,9 @@
 
 :root{
-    --cor-primaria: #7fa3e7;
+    --cor-primaria: #a9c7ff;
     --cor-secundaria: #7c0505;
     --cor-terciaria: #FFCF00;
     --cor-hover: #F62440;
-
-    --fonte-primaria: "krona one" , "sans-serif";
-    --fonte-secundaria: "montserrat" , "sans-serif"; 
 }
 
 *{
@@ -33,7 +30,6 @@ Body{
 }
 
 .cabecalho__menu__link{
-   font-family: var(--fonte-secundaria);
    font-size:1.5rem;
    font-weight: 600;
    color:var(--cor-terciaria);
@@ -67,13 +63,11 @@ Body{
 
 
 .apresentacao__conteudo__titulo{
-    font-size: 2.25rem;
-    font-family: var(--fonte-primaria);
+    font-size: 2.5rem;
 }
 
 .apresentacao__conteudo__texto{
     font-size: 1.5rem;
-    font-family: var(--fonte-primaria)
 }
 
 .apresentacao__links{
@@ -94,7 +88,6 @@ body {
 }
 
 .apresentacao {
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,10 +97,13 @@ body {
 
 .rodape {
     padding: 24px;
-    color: var(--cor-primaria);
+    color: blue;
     background-color: var(--cor-terciaria);
     text-align: center;
-    font-family: var(--fonte-primaria);
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+.cabecalho__menu__link:hover{
+    color: var(--cor-hover);
 }
